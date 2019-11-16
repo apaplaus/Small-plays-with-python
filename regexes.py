@@ -27,9 +27,9 @@ def second_task(condensed):
 
 
 def test():
-    assert getTriplets('bee(P: insect honey) dog  cat (P:milk) ant(P) ape') ==
+    assert getTriplets('bee(P: insect honey) dog  cat (P:milk) ant(P) ape') == \
     [('', 'bee', 'insect honey'), ('dog', '', ''), ('', 'cat', 'milk'), ('', 'ant', ''), ('ape', '', '')]
-    assert second_task('Hello,John.I bought 192.168.0.1 for 100,000 bitcoins') ==
+    assert second_task('Hello,John.I bought 192.168.0.1 for 100,000 bitcoins') == \
     'Hello, John. I bought 192.168.0.1 for 100,000 bitcoins'
 
 if __name__ == '__main__':

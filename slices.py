@@ -40,12 +40,12 @@ def cropAndRevert(cropLen:int):
 
 def splitAndJoin():
     # for the next test
-    hymn_st_john = 'Hymn of St. John: Ut queant laxis re sonare fibris mi ra gestorum fa muli tuorum sol ve polluti la bii reatum SI Sancte Iohannes'
+    hymnString = 'Hymn of St. John: Ut queant laxis re sonare fibris mi ra gestorum fa muli tuorum sol ve polluti la bii reatum SI Sancte Iohannes'
 
     # list from string, starting from the fifth string, skipping always two strings
-    hymnList = hymn_st_john.split()[4::3]
+    hymnList = hymnString.split()[4::3]
     # the skip2 list as a string, ', ' as a separator
-    skip2Str = ', '.join(hymn_list)
+    skip2Str = ', '.join(hymnList)
     return skip2Str
 
 def test():
